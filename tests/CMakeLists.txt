@@ -152,6 +152,11 @@ add_executable(ectest ectest.c)
 target_link_libraries(ectest ${OPENSSL_LIBS})
 add_test(ectest ectest)
 
+# darling_ec_tls_regress
+add_executable(darling_ec_tls_regress darling_ec_tls_regress.c)
+target_link_libraries(darling_ec_tls_regress ${OPENSSL_LIBS})
+add_test(darling_ec_tls_regress darling_ec_tls_regress)
+
 # enginetest
 add_executable(enginetest enginetest.c)
 target_link_libraries(enginetest ${OPENSSL_LIBS})
